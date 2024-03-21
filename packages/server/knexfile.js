@@ -27,7 +27,7 @@ module.exports = {
       password: process.env.MYSQL_PASSWORD,
       database: process.env.MYSQL_DATABASE,
     },
-    pool: { min: 0, max: 7 }, 
+    pool: { min: 0, max: 7 },
     migrations: {
       directory: path.join(__dirname, '/migrations'),
     },
