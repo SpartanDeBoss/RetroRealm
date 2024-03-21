@@ -16,6 +16,8 @@ module.exports = {
       directory: path.join(__dirname, '/seeds/development'),
     },
   },
+  // Existing code...
+
   production: {
     client: 'mysql2',
     connection: {
@@ -25,7 +27,10 @@ module.exports = {
       password: process.env.MYSQL_PASSWORD,
       database: process.env.MYSQL_DATABASE,
     },
-    pool: { min: 0, max: 7 },
+    pool: { min: 0, max: 7 }, 
+    migrations: {
+      directory: path.join(__dirname, '/migrations'),
+    },
     seeds: {
       directory: path.join(__dirname, '/seeds/production'),
     },
