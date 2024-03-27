@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { apiURL } from '../../apiURL';
+import './IndexPage.css';
 
 function Index() {
   const [inputValue, setInputValue] = useState('');
@@ -34,18 +35,26 @@ function Index() {
 
   return (
     <div>
-      <h2>Join with</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Team Code"
-          value={inputValue}
-          onChange={handleInputChange}
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <div className="header-container">
+        <h2>Join with</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Team Code"
+            value={inputValue}
+            onChange={handleInputChange}
+          />
+          <button type="submit" className="my-button">
+            Submit
+          </button>
+        </form>
+      </div>
       <h3> OR </h3>
-      <button type="button" onClick={handleCreateNewTeamClick}>
+      <button
+        type="button"
+        onClick={handleCreateNewTeamClick}
+        className="my-button"
+      >
         Create New Team
       </button>
       <footer>
