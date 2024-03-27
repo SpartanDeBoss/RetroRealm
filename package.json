@@ -1,5 +1,5 @@
 {
-  "name": "RetroRealm",
+  "name": "retrorealm",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/HackYourFuture-CPH/team26-RetroRealm.git",
@@ -9,6 +9,17 @@
     "express": "^4.19.2"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
   }
 }
