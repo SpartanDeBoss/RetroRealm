@@ -1,0 +1,20 @@
+.header-container {
+  display: inline-block;
+  padding: 7px 20px;
+  margin-right: 10px;
+}
+
+.my-button {
+  background: linear-gradient(
+    to right,
+    transparent,
+    red,
+    orange,
+    yellow,
+    green,
+    violet
+  );
+  border-radius: 10px;
+  padding: 7px 20px;
+  font-size: 10px;
+}
